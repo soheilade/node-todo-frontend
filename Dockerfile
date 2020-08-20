@@ -1,5 +1,5 @@
 FROM node
-
+ENV http_proxy http://172.20.22.26:80 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get clean
 
